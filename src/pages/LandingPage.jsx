@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 import almondImg from "../assets/almond.png";
 import boritems from "../assets/보리템즈.png";
 import cookie  from "../assets/쿠키.png";
@@ -26,7 +27,8 @@ export default function LandingPage() {
 
   return (
     <>
-      <head>
+    <Helmet>
+     
         <title>보리템즈 아몬드나라 아몬드가루 97%</title>
         <meta name="description" content="아몬드가루 97%, 건강한 재료로 만든 베이킹" />
         <meta property="og:title" content="보리템즈 아몬드나라 아몬드가루 97%" />
@@ -34,7 +36,8 @@ export default function LandingPage() {
         <meta property="og:image" content="https://almond-landing-eight.vercel.app/boritems.png" />
         <meta property="og:url" content="https://almond-landing-eight.vercel.app/" />
         <meta property="og:type" content="website" />
-      </head>
+     
+      </Helmet>
     <div className="bg-white text-gray-900 font-sans">
 
       {/* Hero Section */}
