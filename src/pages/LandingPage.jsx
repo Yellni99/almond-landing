@@ -25,6 +25,14 @@ export default function LandingPage() {
   ];
 
   return (
+    <>
+      <head>
+        <meta property="og:title" content="보리템즈 아몬드나라 아몬드가루 97%" />
+        <meta property="og:description" content="아몬드가루 97%, 건강한 재료로 만든 베이킹" />
+        <meta property="og:image" content={boritems} />
+        <meta property="og:url" content="https://almond-landing-eight.vercel.app/" />
+        <meta property="og:type" content="website" />
+      </head>
     <div className="bg-white text-gray-900 font-sans">
 
       {/* Hero Section */}
@@ -199,5 +207,6 @@ export default function LandingPage() {
       </footer>
 
     </div>
+    </>
   );
 }
